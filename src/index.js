@@ -9,7 +9,7 @@ const appContent = (
       <h1 className="frame__header">Some nice picture of a cat</h1>
 
       <div className="frame__content">
-        <img src="img/cat_1.jpeg"></img>
+        <img src="./img/cat_1.jpeg" alt="cute kitten" />
       </div>
     </div>
 
@@ -17,7 +17,7 @@ const appContent = (
       <h1 className="frame__header">Anonymous cat</h1>
 
       <div className="frame__content">
-        <img src="img/cat_2.jpeg"></img>
+        <img src="img/cat_2.jpeg" alt="cute kitten"></img>
       </div>
     </div>
   </div>
