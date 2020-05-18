@@ -1,0 +1,9 @@
+.frame {
+  border: #000 solid 1px;
+  padding: 10px;
+}
+
+.frame__content img {
+  width: 400px;
+  height: 250px;
+}
