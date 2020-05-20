@@ -1,0 +1,41 @@
+.trafficlight {
+  width: 150px;
+  height: 350px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.trafficlight .red {
+  background-color: red;
+  box-shadow: 0 0 20px red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.trafficlight .yellow {
+  background-color: yellow;
+  box-shadow: 0 0 20px yellow;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+.trafficlight .green {
+  background-color: rgb(4, 202, 4);
+  box-shadow: 0 0 20px rgb(4, 202, 4);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.trafficlight .active {
+  opacity: 1;
+}

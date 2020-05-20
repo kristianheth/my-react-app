@@ -1,0 +1,86 @@
+.parent {
+  display: flex;
+}
+
+.ceiling-container {
+  width: 50%;
+  height: 300px;
+  margin: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated {
+  animation: spin 6ms linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  width: 150px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.center::before {
+  content: "";
+  width: 40px;
+  height: 10px;
+  background-color: #999;
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  border-radius: 0 50% 50% 50%;
+}
+
+.center::after {
+  content: "";
+  width: 40px;
+  height: 10px;
+  background-color: #999;
+  position: absolute;
+  right: 30px;
+  top: 12px;
+  border-radius: 50% 0 50% 50%;
+}
+
+.another-center {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #666;
+  position: absolute;
+}
+
+.another-center::before {
+  content: "";
+  width: 40px;
+  height: 10px;
+  background-color: #999;
+  position: absolute;
+  transform: rotate(90deg);
+  right: -5px;
+  bottom: 45px;
+  border-radius: 50% 50% 0 50%;
+}
+
+.another-center::after {
+  content: "";
+  width: 40px;
+  height: 10px;
+  background-color: #999;
+  position: absolute;
+  transform: rotate(90deg);
+  right: -5px;
+  top: 45px;
+  border-radius: 70% 70% 70% 0;
+}

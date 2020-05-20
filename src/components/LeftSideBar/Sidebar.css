@@ -1,0 +1,20 @@
+.left-sidebar {
+  background-color: rgb(184, 184, 245);
+  min-width: 150px;
+  /* height: 800px; */
+  /* width: 300px; */
+}
+
+.left-sidebar a {
+  text-decoration: none;
+  color: beige;
+  display: block;
+  padding: 10px;
+  background-color: darkcyan;
+  margin: 10px 3px;
+}
+
+a:hover,
+a:active {
+  background-color: crimson;
+}

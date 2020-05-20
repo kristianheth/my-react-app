@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.app {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(220, 15%, 97%);
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.left-sidebar__toolbar {
+  color: indigo;
+  background-color: rgb(99, 123, 161);
+  padding: 15px;
+  font-weight: 900;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+main-section main-section--with-left-side-bar {
+  width: 100%;
+}
+
+.main-section__toolbar {
+  color: hsl(220, 15%, 97%);
+  background-color: rgb(78, 143, 151);
+  padding: 15px;
+  height: 50px;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.main-section__content {
+  padding: 15px;
+}
+
+.frame {
+  margin-bottom: 25px;
+}
+
+.trafficlight-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+}
+
+.notificationlink img {
+  height: 240px;
+  width: 240px;
+}
