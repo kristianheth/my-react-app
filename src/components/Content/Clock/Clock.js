@@ -2,9 +2,10 @@ import React from "react";
 import "./Clock.css";
 
 const Clock = (props) => {
-  const hoursHandAngle = -90 + (360 / 12) * props.hh;
-  const minutesHandAngle = -90 + (360 / 60) * props.mm;
-  const secondsHandAngle = -90 + (360 / 60) * props.sec;
+  const { hh, mm, sec } = props;
+  const hoursHandAngle = -90 + (360 / 12) * hh;
+  const minutesHandAngle = -90 + (360 / 60) * mm;
+  const secondsHandAngle = -90 + (360 / 60) * sec;
 
   const styleHrs = { transform: `rotate(${hoursHandAngle}deg)` };
   const styleMinutes = { transform: `rotate(${minutesHandAngle}deg)` };

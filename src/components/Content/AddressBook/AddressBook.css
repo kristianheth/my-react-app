@@ -1,0 +1,12 @@
+.addressbook {
+  margin-top: 100px;
+}
+
+.addressbook input {
+  padding: 10px;
+  margin: 10px;
+}
+
+.addressbook span {
+  color: black;
+}

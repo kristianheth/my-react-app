@@ -1,10 +1,10 @@
-.frame {
+.blog {
   border: #000 solid 1px;
   border-radius: 5px;
   padding: 10px;
 }
 
-.frame__content img {
+.blog__content img {
   width: 400px;
   height: 250px;
 }

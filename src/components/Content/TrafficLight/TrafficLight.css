@@ -19,7 +19,7 @@
   opacity: 0.3;
 }
 
-.trafficlight .yellow {
+.trafficlight .amber {
   background-color: yellow;
   box-shadow: 0 0 20px yellow;
   width: 100px;
