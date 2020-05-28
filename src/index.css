@@ -1,7 +1,6 @@
 html,
 body {
-  height: 100%;
-  /* width: 100%; */
+  width: 100%;
   margin: 0;
 }
 
@@ -10,6 +9,8 @@ body {
   padding: 0;
   background-color: hsl(220, 15%, 97%);
   display: flex;
+  align-content: space-between;
+  height: 1170px;
 }
 
 .left-sidebar__toolbar {
@@ -76,7 +77,11 @@ h1 {
 }
 
 .main-section__content__imageswitcher {
-  margin-left: 200px;
-  width: 700px;
-  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+  min-width: 600px;
+  width: 50%;
+  height: 800px;
 }

@@ -2,7 +2,6 @@ import React from "react";
 import "./ImageSwitcher.css";
 
 class ImageSwitcher extends React.Component {
-  // Is state necessary? If so, how to implement the children/mapped array
   constructor(props) {
     super(props);
 
@@ -13,12 +12,7 @@ class ImageSwitcher extends React.Component {
 
   render() {
     const { selectedIndex } = this.state;
-    // const { imgSrc, altText } = this.state.images[selectedIndex];
     const { children = [] } = this.props;
-    // const { src, alt } = this.props.children[index];
-    console.log(children);
-    // return images.map(({ imgSrc, altText }, index) => {
-    //   if (index === selectedIndex) {
     const numberOfImages = children.length;
     const shouldEnableLeftBtn = selectedIndex > 0;
     const shouldEnableRightBtn = selectedIndex < children.length - 1;
@@ -40,7 +34,6 @@ class ImageSwitcher extends React.Component {
           )}
 
           {children[selectedIndex]}
-
           {shouldEnableRightBtn && (
             <div
               className="imageswitcher__images-next"
@@ -53,31 +46,26 @@ class ImageSwitcher extends React.Component {
               &gt;
             </div>
           )}
-
-          <div className="imageswitcher__paginator">
-            <div className="imageswitcher__paginator-dots">
-              {children.map((_, index) => {
-                return (
-                  <span
-                    key={index}
-                    className={
-                      "dot " + (selectedIndex === index ? "dot__active" : "")
-                    }
-                    onClick={() => {
-                      this.setState({ selectedIndex: index });
-                    }}
-                  >
-                    ❍
-                  </span>
-                );
-              })}
-            </div>
+        </div>
+        <div className="imageswitcher__paginator">
+          <div className="imageswitcher__paginator-dots">
+            {children.map((_, index) => {
+              return (
+                <span
+                  key={index}
+                  className={
+                    "dot " + (selectedIndex === index ? "dot__active" : "")
+                  }
+                  onClick={() => {
+                    this.setState({ selectedIndex: index });
+                  }}
+                ></span>
+              );
+            })}
           </div>
         </div>
       </div>
     );
-    //   }
-    // });
   }
 }
 
